@@ -35,6 +35,8 @@ void kernel_main(void)
 {
     printf("\n\nHello, World!\n");
     printf("1 + 2 = %d, %x\n", 1 + 2, 0x1234abcd);
+    printf("strcmp(a,b) = %d\n", strcmp("a", "b"));
+    printf("strcmp(abc,abc) = %d\n", strcmp("abc", "abc"));
 
     for (;;)
         __asm__ __volatile__("wfi");
