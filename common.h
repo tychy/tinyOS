@@ -1,5 +1,9 @@
 #pragma once
-
+struct sbiret
+{
+    long error;
+    long value;
+};
 typedef int bool;
 typedef unsigned char uint8_t;
 typedef unsigned short uint16_t;
